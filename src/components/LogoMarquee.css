@@ -1,0 +1,46 @@
+.logo-marquee {
+  padding: 40px 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
+  background: transparent;
+}
+
+.marquee-track {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+.marquee-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  opacity: 0.5;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.logo-bold {
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-text);
+  padding-bottom: 2px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

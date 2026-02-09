@@ -1,0 +1,40 @@
+/* App styles */
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Hero — base layer, stays behind everything ── */
+.hero-wrapper {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.hero-bg-effects {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ── Stack slide sections ── */
+.stack-section {
+  position: sticky;
+  top: 0;
+  background: var(--color-bg);
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* 3D tilt inner wrapper — inside stack-section so sticky isn't broken */
+.tilt-inner {
+  transform-style: preserve-3d;
+}
+
+/* Features — relative so internal card sticky works */
+.features-section {
+  position: relative;
+  background: var(--color-bg);
+}

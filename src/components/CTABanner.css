@@ -1,0 +1,83 @@
+.cta-banner {
+  padding: 80px 0;
+  background: transparent;
+}
+
+.cta-banner-inner {
+  background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 40%, #a78bfa 100%);
+  border-radius: 24px;
+  padding: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(124, 58, 237, 0.25);
+}
+
+.cta-banner-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+  animation: cta-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes cta-shimmer {
+  0% { background-position: -200% -200%; }
+  100% { background-position: 200% 200%; }
+}
+
+.cta-banner-title {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: white;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-banner-sub {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 12px;
+}
+
+.cta-banner-btn {
+  padding: 14px 32px;
+  background: white;
+  color: #6d28d9;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-banner-btn:hover {
+  transform: scale(1.04) translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .cta-banner-inner {
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+  }
+  .cta-banner-title {
+    font-size: 28px;
+  }
+}

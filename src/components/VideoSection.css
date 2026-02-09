@@ -1,0 +1,29 @@
+.video-section {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.video-section-bg {
+  background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 50%, #c4b5fd 100%);
+  border-radius: 32px;
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player {
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    padding: 40px 20px;
+  }
+}

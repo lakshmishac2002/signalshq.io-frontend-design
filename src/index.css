@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-barlow: 'Barlow', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  --color-dark: #1a1a1a;
+  --color-text: #3b3c3d;
+  --color-text-light: #6b7280;
+  --color-text-muted: #9ca3af;
+  --color-white: #ffffff;
+  --color-bg: #f5f3ff;
+  --color-bg-light: #f9fafb;
+  --color-border: #f3f4f6;
+  --color-purple: #c4b5fd;
+  --color-purple-light: #e9d5ff;
+  --color-purple-bg: #d8b4fe;
+  --color-pink: #fecdd3;
+  --color-accent-red: #ef4444;
+  --color-accent-green: #22c55e;
+  --color-accent-purple: #8b5cf6;
+}
+
+html {
+  /* scroll-behavior handled by GSAP */
+}
+
+body {
+  font-family: var(--font-inter);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-barlow);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-dark);
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.2);
+  color: #1a1a2e;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}

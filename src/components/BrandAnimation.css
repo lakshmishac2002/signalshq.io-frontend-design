@@ -1,0 +1,62 @@
+.brand-animation {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-animation-bg {
+  background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 30%, #fce4ec 70%, #fde2e4 100%);
+  border-radius: 32px;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-animation-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-title {
+  font-family: var(--font-barlow);
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: -0.03em;
+}
+
+.brand-tagline {
+  font-family: var(--font-barlow);
+  font-size: 32px;
+  letter-spacing: -0.02em;
+}
+
+.brand-tagline-bold {
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.brand-tagline-light {
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .brand-animation {
+    padding: 40px 20px;
+  }
+  .brand-title {
+    font-size: 48px;
+  }
+  .brand-animation-bg {
+    min-height: 350px;
+  }
+}

@@ -1,0 +1,149 @@
+.footer {
+  background: transparent;
+  padding: 60px 0 40px;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-newsletter {
+  margin-bottom: 48px;
+}
+
+.footer-newsletter-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+  font-family: var(--font-inter);
+}
+
+.footer-newsletter-form {
+  display: flex;
+  gap: 0;
+  max-width: 380px;
+}
+
+.footer-newsletter-input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 14px;
+  outline: none;
+  color: var(--color-text);
+}
+
+.footer-newsletter-input::placeholder {
+  color: #9ca3af;
+}
+
+.footer-newsletter-input:focus {
+  border-color: #8b5cf6;
+}
+
+.footer-newsletter-btn {
+  padding: 10px 20px;
+  background: var(--color-dark);
+  color: white;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.footer-newsletter-btn:hover {
+  opacity: 0.85;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: var(--color-text-light);
+}
+
+.footer-contact-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-contact-links a {
+  font-size: 14px;
+  color: var(--color-text-light);
+  transition: color 0.2s;
+}
+
+.footer-contact-links a:hover {
+  color: var(--color-dark);
+}
+
+.footer-links-group h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+  font-family: var(--font-inter);
+}
+
+.footer-links-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links-group a {
+  font-size: 14px;
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.footer-links-group a:hover {
+  color: #8b5cf6;
+}
+
+.footer-soc2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.soc2-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.soc2-text {
+  font-size: 9px;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .footer-soc2 {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+}
